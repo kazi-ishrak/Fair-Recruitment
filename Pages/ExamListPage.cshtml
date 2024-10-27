@@ -1,0 +1,50 @@
+﻿@page "/"
+@model Fair_Recruitment_Web_Result.Pages.ExamListPageModel
+@{
+    ViewData["Title"] = "Face Match Report";
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/datatables/datatables.bootstrap5.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <h2 class="text-primary">Face Match Report</h2>
+        <hr>
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary bg-gradient"> </div>
+                    <div class="card-body">
+                        <table id="ReportListTable" class="display table-bordered text-center" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>SL.</th>
+                                    <th>Office</th>
+                                    <th>Post</th>
+                                    <th>Exam Type</th>
+                                    <th>Date</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data will be dynamically populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/datatables/datatables.min.js"></script>
+<script src="~/lib/datatables/datatables.bootstrap5.min.js"></script>
+<script src="~/js/examlist.js"></script>
+
+</html>

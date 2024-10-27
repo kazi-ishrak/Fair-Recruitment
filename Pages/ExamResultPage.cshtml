@@ -1,0 +1,97 @@
+﻿@page
+@model Fair_Recruitment_Web_Result.Pages.ReportResultPageModel
+@{
+    ViewData["Title"] = "Report Results";
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/datatables/datatables.bootstrap5.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <h2 class="text-primary">Report Results</h2>
+        <hr>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-auto">
+                    <button type="button" id="officeButton" class="btn btn-light" style="pointer-events: none; opacity: 1;">Office: </button>
+                </div>
+                <div class="col-auto">
+                    <button type="button" id="postButton" class="btn btn-light" style="pointer-events: none; opacity: 1;">Post:</button>
+                </div>
+                <div class="col-auto">
+                    <button type="button" id="typeButton" class="btn btn-light" style="pointer-events: none; opacity: 1;">Type:</button>
+                </div>
+                <div class="col-auto">
+                    <button type="button" id="dateButton" class="btn btn-light" style="pointer-events: none; opacity: 1;"> Date:</button>
+                </div>
+                @* <div class="col-auto">
+                    <button type="button" class="btn btn-outline-danger fw-bold" id="downloadPDFReport">
+                        <i class="fa fa-solid fa-file-pdf-o" aria-hidden="true"></i> Download
+                    </button>
+                </div> *@
+                <div class="col-auto">
+                    <button type="button" class="btn btn-outline-success fw-bold" id="downloadExcelReport">
+                        <i class="fa fa-solid fa-file-excel-o" aria-hidden="true"></i> Download
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary bg-gradient"> </div>
+                    <div class="card-body">
+                        <table id="ReportListTable" class="display table-bordered text-center" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    @* <th>SL.</th>
+                                    <th>Roll</th>
+                                    <th>Name</th>
+                                    <th>Similarity</th>
+                                    <th>Timestamp</th>
+                                    <th>Decision</th>
+                                    <th>Enrolled Image</th>
+                                    <th>Captured Image</th> *@
+
+                                    <th>SL.</th>
+                                    <th>Position</th>
+                                    <th>Roll</th>
+                                    <th>Name</th>
+                                    <th>Marks</th>
+                                    <th>Enrolled Image</th>
+                                    <th>Room Captured Image</th>
+                                    <th>Room Similarity</th>
+                                    <th>Room Decision</th>
+                                    <th>Room Timestamp</th>
+                                    <th>Gate Captured Image</th>
+                                    <th>Gate Similarity</th>
+                                    <th>Gate Decision</th>
+                                    <th>Gate Timestamp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data will be dynamically populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/datatables/datatables.min.js"></script>
+<script src="~/lib/datatables/datatables.bootstrap5.min.js"></script>
+@* <script src="~/js/examlist.js"></script> *@
+<script src="~/js/examresults.js"></script>
+
+</html>
