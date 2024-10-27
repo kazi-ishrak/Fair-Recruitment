@@ -1,0 +1,101 @@
+﻿@page "/login"
+@model Fair_Recruitment_Web_Result.Pages.LoginPageModel
+@{
+     Layout = null;
+}
+
+<link rel="icon" type="image/png" href="~/lib/Login_Form_SupportFIle/images/icons/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="~/lib/Login_Form_SupportFIle/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="~/lib/Login_Form_SupportFIle/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="~/lib/Login_Form_SupportFIle/vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="~/lib/Login_Form_SupportFIle/vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="~/lib/Login_Form_SupportFIle/vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="~/lib/Login_Form_SupportFIle/css/util.css">
+<link rel="stylesheet" type="text/css" href="~/lib/Login_Form_SupportFIle/css/main.css">
+<link href="~/lib/snackbar/snackbar.css" rel="stylesheet" />
+
+<div class="limiter">
+    <div class="container-login100">
+
+        <div class="bckimage"></div>
+
+        <div class="wrap-login100">
+
+            <div class="login100-pic js-tilt" data-tilt>
+                <img src="~/lib/Login_Form_SupportFIle/images/logo10.png" alt="IMG">
+            </div>
+
+            <div class="login100-form validate-form" method="post">
+
+                <span style="font-size:x-large; font-family:Rockwell;" class="login100-form-title">
+                    Fair Recruitment
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="Valid Id is required">
+                    <input id="id" class="input100" type="email" name="id" placeholder="Email">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <input id="pass" class="input100" type="password" name="pass" placeholder="Password">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button id="btnLogin" class="login100-form-btn">
+                        Login
+                    </button>
+                    <br />
+                    <p></p>
+
+                    @{
+                        if (ViewBag.Message == null || ViewBag.Message == "")
+                        {
+
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger">
+                                <strong>@ViewBag.Message</strong>
+                            </div>
+                        }
+                    }
+
+                </div>
+
+                <div class="text-center p-t-36">
+                    <a class="txt2" href="#">
+                        Engineering Team
+                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                        <br />
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/Login_Form_SupportFIle/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="~/lib/Login_Form_SupportFIle/vendor/bootstrap/js/popper.js"></script>
+<script src="~/lib/Login_Form_SupportFIle/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/lib/Login_Form_SupportFIle/vendor/select2/select2.min.js"></script>
+<script src="~/lib/Login_Form_SupportFIle/vendor/tilt/tilt.jquery.min.js"></script>
+<script src="~/lib/snackbar/snackbar.js"></script>
+
+<script>
+    $('.js-tilt').tilt({
+        scale: 1.1
+    });
+</script>
+
+<script src="~/lib/Login_Form_SupportFIle/js/main.js"></script>
+

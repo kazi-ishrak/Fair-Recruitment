@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fair_Recruitment_Web_Result", "Fair_Recruitment_Web_Result.csproj", "{145D625B-D7D7-4D2B-9DDE-16975D7BF8E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{145D625B-D7D7-4D2B-9DDE-16975D7BF8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145D625B-D7D7-4D2B-9DDE-16975D7BF8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145D625B-D7D7-4D2B-9DDE-16975D7BF8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145D625B-D7D7-4D2B-9DDE-16975D7BF8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3CDB3D1-1FF0-419A-B87D-F60353B218BF}
+	EndGlobalSection
+EndGlobal
